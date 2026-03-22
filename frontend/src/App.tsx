@@ -1,11 +1,13 @@
 import FAQ from "./components/FAQ"
+import IconMap from "./components/IconMap"
 
 function App() {
   return (
     <div className="w-full h-full flex flex-col font-[Phantom_Sans]">
-      <div className="w-full h-[calc(100vh-144px)] bg-darker-background flex flex-col items-center justify-center">
-        <h1 className="text-9xl font-bold text-gray-700">Cookbook</h1>
-        <p className="text-3xl font-gray-500 mt-3 w-1/2">Make a food or cooking related project and get a custom Hack Club cookbook!</p>
+      <div className="relative w-full h-[calc(100vh-144px)] bg-darker-background flex flex-col items-center justify-center">
+        <IconMap />
+        <h1 className="text-9xl font-bold text-gray-700 z-10">Cookbook</h1>
+        <p className="text-3xl font-gray-500 mt-3 w-1/2 z-10">Make a food or cooking related project and get a custom Hack Club cookbook!</p>
       </div>  
       <div className="w-full h-72 bg-background flex justify-center">
         <div className="w-2/3 flex flex-col">
@@ -15,7 +17,7 @@ function App() {
               1) Make a food or cooking related project. It could be a recipe website, a food game, or anything you can think of!
             </p>
             <p className="text-2xl font-gray-500 mt-2">
-              2) Track your coding time using <a href="https://hackatime.hackclub.com/" className="font-bold hover:underline" target="_blank" rel="noopener noreferrer">Hackatime</a> and make git commits
+              2) Track your coding time using <a href="https://hackatime.hackclub.com/" className="font-bold text-darker-background hover:underline" target="_blank" rel="noopener noreferrer">Hackatime</a> and make git commits
             </p>
             <p className="text-2xl font-gray-500 mt-2">
               3) Submit your project and get a custom Hack Club cookbook or other cooking related prizes!
