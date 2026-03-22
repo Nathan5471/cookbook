@@ -1,3 +1,5 @@
+import FAQ from "./components/FAQ"
+
 function App() {
   return (
     <div className="w-full h-full flex flex-col font-[Phantom_Sans]">
@@ -32,27 +34,13 @@ function App() {
       <div className="w-full h-128 bg-background flex justify-center">
         <div className="w-2/3 flex flex-col">
           <h2 className="text-4xl font-bold text-gray-600 mt-10">FAQ</h2>
-          <div className="ml-2 flex flex-col">
-            <p className="text-2xl font-gray-500 mt-2">
-              Q: What is cookbook?
-              A: Cookbook is a Hack Club YSWS where you ship cooking related projects and get a custom Hack Club cookbook!
-            </p>
-            <p className="text-2xl font-gray-500 mt-2">
-              Q: What is Hack Club?
-              A: Hack Club is a global nonprofit whose mission is to support high schoolers learn about programming through fun programs like this one.
-            </p>
-            <p className="text-2xl font-gray-500 mt-2">
-              Q: Can I participate?
-              A: Anyone aged 13-18 is eligible to participate in cookbook.
-            </p>
-            <p className="text-2xl font-gray-500 mt-2">
-              Q: What is "shipping" a project?
-              A: For your project to be "shipped", you need to have it be open source on Git Hub, track your time on Hackatime, and a way for us to try out your project.
-            </p>
-            <p className="text-2xl font-gray-500 mt-2">
-              Q: All this for free?
-              A: Yep! Cookbook is a completely free program to participate in!
-            </p>
+          <div className="ml-2 flex flex-col gap-y-2">
+            <FAQ question="What is cookbook?" answer="Cookbook is a Hack Club YSWS where you ship cooking related projects and get a custom Hack Club cookbook!" />
+            <FAQ question="What is Hack Club?" answer="Hack Club is a global nonprofit whose mission is to support high schoolers learn about programming through fun programs like this one." />
+            <FAQ question="What will be in the cookbook?" answer="The cookbook will contain recipes submitted by Hack Clubbers from around the world. All of the recipes will be tested, so you know they will work and taste good!" />
+            <FAQ question="What kind of projects can I make?" answer="You can make anything that is related to food or cooking. It could be a website that is dedicated to your favorite food, or you could make a blog about your cooking journey. Some other projects you could make include a game about food, a recipe website, or an app about cooking (like a bread calculator)" />
+            <FAQ question="What is 'shipping' a project?" answer="For your project to be 'shipped', you need to have it be open source on Git Hub, track your time on Hackatime, and have a way for us to try out your project." />
+            <FAQ question="All this for free?" answer="Yep! Cookbook is a completely free program to participate in!" />
           </div>
         </div>
       </div>
